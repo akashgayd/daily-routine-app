@@ -1,0 +1,142 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+   
+    width: 100%;
+   background: linear-gradient(100deg, rgb(248, 241, 241),rgb(253, 253, 255));
+    padding: 15px;
+    font-family: "Playwrite GB S", serif;
+    color: rgb(0, 0, 0);
+}
+.main-cont{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+h1{
+font-size: 40px;
+
+}
+h1 span{
+    color: chocolate;
+}
+input{
+    width: 89%;
+    height: 40px;
+    border: 1px solid lightblue;
+    outline: none;
+    padding: 10px;
+    text-transform: capitalize;
+   border-radius: 8px;
+}
+input::placeholder{
+    color: blueviolet;
+}
+.add-btn{
+    height: 40px;
+    width: 100px;
+    border: 1px solid rgb(1, 59, 79);
+    background-color: transparent;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-family: "Playwrite GB S", serif;
+
+}
+.add-btn:hover{
+    background-color: aliceblue;
+    color: black;
+    transition-duration: 0.4s;
+    border-radius: 6px;
+}
+.your-list{
+    width: 100%;
+    padding: 20px;
+}
+.save-btn{
+
+    height: 40px;
+    width: 100px;
+    border: 1px solid rgb(1, 59, 79);
+    background-color: transparent;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+    color: rgb(22, 1, 1);
+    font-family: "Playwrite GB S", serif;
+}
+
+@media (min-width:1024px) {
+    .main-cont{
+    width: 500px;
+    max-height: 100vh;
+    border-radius: 10px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: aliceblue;
+   color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+input{
+    width: 80%;
+}
+html,body{
+ background: linear-gradient(110deg,rgb(16, 16, 20),rgb(0, 63, 87));
+}
+.save-btn{
+    color: black;
+    margin-bottom: 8px;
+}
+.add-btn{
+    color: black;
+}
+}
+
+.list-cont{
+    height: 45px;
+    width: 88%;
+    /* border: 1px solid red; */
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.label-cont{
+    height: 42px;
+    width: 100%;
+   
+    margin-left: 7px;
+    background-color: rgb(3, 109, 117);
+    border-left: 6px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+   color: white;
+    justify-content: space-between;
+}
+.delete-btn{
+    border: none;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+.line-thorow{
+    text-decoration: line-through;
+}
